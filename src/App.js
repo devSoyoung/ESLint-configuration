@@ -6,6 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>React Typing Animation Test</h1>
+        <div></div>
       </div>
     );
   }

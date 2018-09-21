@@ -25,3 +25,23 @@ create-react-app으로 제작한 프로젝트는 위에도 말했다시피 ESLin
    }
 
 이제 npm start해서 프로젝트를 실행시킨 상태에서 수정한 내용을 저장하지 않아도, 사용하지 않은 변수가 있으면 표시해주고 닫히지 않은 태그가 있으면 빨간 줄을 띄우저는 것을 직접 눈으로 확인했다! 너무 편하잖아?
+
+다음으로는 prettier를 설치해본다,
+
+   npm install --save-dev prettier-eslint
+   yarn add --dev prettier-eslint
+
+패키지 매니저로 yarn을 사용하고 있다면 아래로, npm을 사용하고 있다면 위로. 설치할 때 dev 옵션을 주는 이유는 개발할 때만 필요한, 잘 개발하기 위해 사용하는 것이기 때문에 build 할 때 포함되지 말라고 그런 것! 아무튼 prettier-eslint를 다운받고 나서 설정 창을 들어간다. 그리고 WORKSPACE SETTING 탭을 들어가서 아래 내용을 입력해준다. 한글판이라면 작업영역설정이라고 되어있겠지.
+
+   {
+      "editor.formatOnSave": true,
+      "javascript.format.enable": false,
+      "prettier.eslintIntegration": true,
+   }
+
+코드가 저장될 때 자동으로 포맷되고, prettier에서 ESLint와 연동되도록 하는 설정이라고 한다.
+근데 이 설정을 하고 나서 오류가 생겼는데, 사실 정확히는 얘를 설정하고가 아니라 prettier-eslint를 설치하고 난 뒤인 것 같다. 확실하지가 않아서ㅠㅠ. 
+
+   ./node_modules/sockjs-client/lib/info-ajax.js
+
+라는 파일이 없다는 에러인데. 지금부터 해결방법을 찾아봐야겠다. 오늘 이 설정만 하다가 컴퓨터 끌 것 같음. 
