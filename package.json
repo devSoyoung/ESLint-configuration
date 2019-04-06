@@ -1,0 +1,25 @@
+{
+    "name": "eslint-configuration",
+    "version": "1.0.0",
+    "description": "ESLint 설정법, 설정파일 정리",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-google": "^0.12.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "./node_modules/.bin/eslint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/devSoyoung/react-eslint-prettier.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/devSoyoung/react-eslint-prettier/issues"
+    },
+    "homepage": "https://github.com/devSoyoung/react-eslint-prettier#readme"
+}
